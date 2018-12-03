@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Courses &amp; Recettes</string>
+
+    <!-- Common -->
+
+    <!-- Shopping -->
+    <string name="shopping_tab">Courses</string>
+
+    <!-- Recipies -->
+    <string name="recipies_tab">Recettes</string>
+
+    <!-- Goodss -->
+    <string name="goods_tab">Articles</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipies">
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TabWidget android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:tag="tab0"
+                    android:text="@string/shopping_tab"
+                    android:background="@android:drawable/btn_star_big_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:tag="tab1"
+                    android:text="@string/recipies_tab"
+                    android:background="@android:drawable/btn_star_big_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+                <TextView
+                    android:tag="tab2"
+                    android:text="@string/goods_tab"
+                    android:background="@android:drawable/btn_star_big_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="Content 1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:text="Content 2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:text="Content 3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>
